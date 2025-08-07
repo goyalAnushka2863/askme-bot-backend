@@ -5,7 +5,7 @@ import time
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["*"])
 
 # ✅ Your Groq API Key
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
